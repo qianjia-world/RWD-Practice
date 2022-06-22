@@ -1,0 +1,159 @@
+.product{
+    width: 100%;
+    background-color: $color-light;
+    color: $color-dark;
+    a{
+        color: $color-dark;
+    }//調整css reset設定a為白色這件事
+    .container{
+        max-width: 1024px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 48px 42px 0px 42px;
+        aside{
+            width: 220px;
+            h2{
+                font-size: $font-s;
+                line-height: $line-height-l;
+                margin-bottom: 16px;
+            }
+            li{
+                font-size: 16px;
+                line-height: $line-height-l ;
+                border-bottom: 1px solid #3D1101;
+                padding: 1px 8px;
+            }
+            li:nth-child(4) {
+                background-color: #3D1101;
+                a{
+                color: #fff;
+                }
+            }
+        }
+        .shopping{
+            width: 700px;
+            .shopping-head{
+                display: flex;
+                justify-content: space-between;
+                .search{
+                    input{
+                        width: 424px;
+                        height: 32px;
+                        border: 2px solid #3D1101;
+                        background-color: $color-light;
+                    }
+                    a{
+                        position: relative;
+                    }
+                    .fa-magnifying-glass{
+                        position: absolute;
+                        left: -2px;
+                        width: 36px;
+                        height: 32px;
+                        padding: 6px 8px 7px 9px;
+                        background-color: $color-dark;
+                        color: #fff;
+                    }
+                }
+                .cart{
+                    padding-right: 20px;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    a{
+                        display: block;
+                    }
+                    a:nth-child(1){
+                        line-height: 21px;
+                        margin-right: 12px;
+                    }
+                    .line{
+                        border: 1px solid #3D1101;
+                        height: 14px;
+                        margin-right: 17px;
+                    }
+                    .fa-cart-shopping{
+                        font-size: 27px;
+                        line-height: 29px;
+                    }
+                    .fa-1{
+                        position: absolute;
+                        top: -3px;
+                        right: 15px;
+                        width: 16px;
+                        height: 16px;
+                        font-size: 14px;
+                        text-align: center;
+                        color: #fff;
+                        background-color: $color-orange;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .shpping-product ul{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 26px;
+                justify-content: space-between;
+                text-align: center;
+                li{
+                    width: 220px;
+                    height: 280px;
+                    position: relative;
+                    background: #EFE9E7;
+                    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+                    .fa-heart{
+                        position: absolute;
+                        font-size: 20px;
+                        line-height: 23px;
+                        color: #fff;
+                        top: 9px;
+                        left: 9px;
+                    }
+                    img{
+                        width: 220px;
+                        height: 120px;
+                    }
+                    h4{
+                        font-size: $font-s;
+                        line-height: 27px;
+                        margin-top: 11px;
+                    }
+                    h5{
+                        font-size: 12px;
+                        line-height: 16px;
+                        margin-bottom: 8px;
+                    }
+                    hr{
+                        width: 91px;
+                        height: 3px;
+                        background-color: $color-dark;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        margin-bottom: 13px;
+                        font-size: $font-s;
+                        line-height: $line-height-m;
+                        font-weight: bold;
+                    }
+                    a:last-child{
+                        display: block;
+                        width: 200px;
+                        height: 28px;
+                        line-height: $line-height-s;
+                        border: 2px solid #FF5E45;
+                        border-radius: 3px;
+                        color: $color-orange;
+                        margin: 0 auto;
+                    }
+                }
+                li:first-child{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+    }
+    
+}
